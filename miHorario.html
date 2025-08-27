@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es" translate="no">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mi Horario</title>
+        <style> 
+        table {
+            border: 3px solid pink;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 3px solid pink;
+        }
+    </style> <!-- Permite añadir estilo a la tablas-->
+    </head>
+
+    <body>
+        <table> <!-- Border permite añadir un borde a la tabla-->
+            <caption> <strong>CONSULTA DE HORARIO</strong></caption> <!-- El caption permite añadir un titulo a la tabla-->
+            <thead> <!-- Thead es el encabezado de la tabla-->
+                <tr> <!-- TR es la fila-->
+                    <th></th> <!-- TH es la celda de encabezado-->
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                    <th>Sábado</th>
+                </tr>
+            </thead>
+            
+            <tbody> <!-- Tbody es el cuerpo de la tabla-->
+                <tr> 
+                    <td><strong>7:00 am a <br>7:50 am</strong></td> <!-- TD es la celda de datos-->
+                    <td rowspan="2">F-01 / CO <br> NOSQL <br> 51 / 0S05</td> <!-- Rowspan permite que una celda ocupe varias filas-->
+                    <td rowspan="2">F-01 / CO <br> DESARROLLO WEB <br> 51 / 0S05</td>
+                    <td rowspan="3"></td>
+                    <td rowspan="3">F-01 / CO <br> DESARROLLOWEB <br> 51 / 0S05</td>
+                    <td rowspan="2">F-01 / CO <br> NOSQL <br> 51 / 0S05</td>
+                    <td rowspan="6"></td>
+                </tr>
+
+                <tr>
+                    <td><strong>7:50 am a <br>8:40 am</strong></td>
+                </tr>
+
+                <tr>
+                    <td><strong>8:40 am a <br>9:30 am</strong></td>
+                    <td rowspan="3">F-01 / CO <br> OBLIGACIONES <br> 51 / 0S05</td> <!-- Rowspan permite que una celda ocupe varias filas-->
+                    <td rowspan="3">F-01 / CO <br> PROCESOS <br> 51 / 0S05</td>
+                    <td rowspan="3">F-01 / CO <br> ANÁLISISMULTI <br> 51 / 0S05</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>9:30 am a <br>10:20 am</strong></td>
+                    <td rowspan="2">F-01 / CO <br> TEORÍASIST <br> 51 / 0S05</td>
+                </tr>
+
+                <tr>
+                    <td><strong>10:20 am a <br>11:10 pm</strong></td>
+                </tr>
+
+                <tr>
+                    <td><strong>11:10 pm a <br>12:00 pm</strong></td>
+                    <td colspan="3"></td>
+                    <td>F-01 / CO <br> ANÁLISISMULTI <br> 51 / 0S05</td>
+                </tr>
+
+                <tr>
+                    <td>Total días</td>
+                    <td colspan="6">5</td> <!-- Colspan permite que una celda ocupe varias columnas-->
+                </tr>
+            </tbody>
+            
+        </table>
+        <br>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th><strong>Materia</strong></th>
+                    <th><strong>Abreviación de Materia</strong></th>
+                    <th><strong>Grupo</strong></th>
+                    <th><strong>Tipo Oferta</strong></th>
+                    <th><strong>Frec.Total</strong></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Fundamentos de Desarrollo Web</td>
+                    <td>DESARROLLOWEB</td>
+                    <td>51</td>
+                    <td>ESCOLARIZADA</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Almacenes de Datos No Estructurados</td>
+                    <td>NOSQL</td>
+                    <td>51</td>
+                    <td>ESCOLARIZADA</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td>Teoría de Sistemas</td>
+                    <td>TEORÍASIST</td>
+                    <td>51</td>
+                    <td>ESCOLARIZADA</td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td>Análisis Multivariante</td>
+                    <td>ANÁLISISMULTI</td>
+                    <td>51</td>
+                    <td>ESCOLARIZADA</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td>Teoría de las Obligaciones y Contratos Mercantiles</td>
+                    <td>OBLIGACIONES</td>
+                    <td>51</td>
+                    <td>ESCOLARIZADA</td>
+                    <td>3</td>
+                </tr>
+
+                <tr>
+                    <td>Análisis y Diseño de Procesos</td>
+                    <td>PROCESOS</td>
+                    <td>51</td>
+                    <td>ESCOLARIZADA</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    
+</html>
