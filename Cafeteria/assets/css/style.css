@@ -1,0 +1,235 @@
+body { 
+    /* Estilos generales del cuerpo */
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgba(241, 223, 205, 0.589);
+}
+
+.content { 
+    /* Contenedor principal */
+    background-color: #fff;
+    margin: 10px;
+    width: 90%;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgb(67, 33, 5);
+    box-sizing: border-box;
+}
+
+header {
+    /* Encabezado */
+    background-color: #4f2a06b6;
+    color: #000000;
+    padding: 10px 0px 10px 15px;
+    border-radius: 3px;
+    font-family: "Ovo", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+header > h1 {
+    /* Título principal */
+    font-size: 3rem;
+    text-align: center;
+    margin: 0; 
+    text-shadow: 1px 1px 2px rgb(81, 46, 13);
+}
+
+header > p {
+    /* Subtítulo debajo del h1  */
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: #000000;
+    font-weight: 500;
+}
+
+nav { 
+    /* Barra de navegación  */
+    background-color: #311a06;
+}
+
+nav ul { 
+    /* Lista del menú */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a { 
+    /* Enlaces del menú */
+    display: block;
+    padding: 15px 0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3 ease;
+}
+
+nav ul li { 
+    /* Elementos de la lista del menú */
+    flex: 1;
+    text-align: center;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    /* Efecto hover en enlaces del menú */
+    background-color: #ecb262b6;
+    color: #000000;
+}
+
+.carrusel {
+    /* Carrusel de imágenes */
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-productos {
+    /* Imágenes del carrusel con animación horizontal */
+    display: flex;
+    width: nav-content;
+    animation: scroll 30s linear infinite;
+}
+
+.img-productos img {
+    /* Imágenes del carrusel con tamaño fijo */
+    width: 50rem;
+    height: 30rem;
+}
+
+@keyframes scroll {
+    /* Animación para mover las imágenes del carrusel */
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-250%);
+    }
+}
+
+#menu {
+    /* Sección menú */
+    width: 90%;
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    background-color: #c39268;
+    border-radius: 12px;
+    color: #000000;
+}
+
+#menu ul {
+    /* Lista del menú */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li {
+    /* Elementos del menú */
+    margin-bottom: 1.6rem;
+    border-left: 4px solid #000000;
+    padding-left: 1rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#menu ul li:hover {
+    /* Efecto hover en menú */
+    background-color: #654115cd;
+}
+
+#menu ul li strong {
+    /* Texto destacado en menú */
+    font-size: 1.15rem;
+    color: #ffffff;
+}
+
+#menu ul li small {
+    /* Texto pequeño en menú */
+    display: block;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #000000;
+    margin-top: 0.2rem;
+}
+
+#promociones { 
+    /* Sección promociones */
+    width: 90%;
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    background-color: #9a6b42;
+    border-radius: 12px;
+    color: #000000;
+}
+
+#promociones ul { 
+    /* Lista de promociones sin viñetas */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#promociones ul li { 
+    /* Elementos de promociones */
+    margin-bottom: 1.6rem;
+    border-left: 4px solid #000000;
+    padding-left: 1rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#promociones ul li:hover { 
+    /* Efecto hover en promociones */
+    background-color: #654115cd;
+}
+
+#promociones ul li strong {
+    /* Texto destacado en promociones */
+    font-size: 1.15rem;
+    color: #ffffff;
+}
+
+#promociones ul li small {
+    /* Texto pequeño en promociones */
+    display: block;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #000000;
+    margin-top: 0.2rem; 
+}
+
+#nosotros { 
+    /* Sección nosotros */
+    width: 90%;
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    background-color: #c39268;
+    border-radius: 12px;
+    color: #000000;
+}
+
+#contacto { 
+    /* Sección contacto */
+    width: 90%;
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    background-color: #9a6b42;
+    border-radius: 12px;
+    color: #000000;
+}
+
+html { 
+    /* Scroll suave para navegación interna */
+    scroll-behavior: smooth;
+}
