@@ -1,0 +1,52 @@
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(86, 49, 85);
+}
+
+body {
+    background-color: #f4c1ed;
+}
+
+#curriculum {
+    display: flex;
+    max-width: 900px;
+    margin: 40px auto;
+    background: #e6a0ea;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.mis_contactos {
+    background: #f3def1;
+    padding: 30px 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.mi_historial {
+    padding: 30px 40px;
+    flex: 1;
+}
+
+.fotoPerfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: width 0.3s ease, height 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.fotoPerfil:hover {
+    width: 250px;
+    height: 250px;
+    transform: scale(1.1);
+}
+
+section {
+    margin-bottom: 30px;
+}
+section h2 {
+    color: #570c52;
+    margin-bottom: 10px;
+}
