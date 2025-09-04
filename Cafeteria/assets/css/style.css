@@ -23,7 +23,7 @@ header {
     /* Encabezado */
     background-color: #4f2a06b6;
     color: #000000;
-    padding: 10px 0px 10px 15px;
+    padding: 0.5rem;
     border-radius: 3px;
     font-family: "Ovo", serif;
     font-weight: 800;
@@ -34,7 +34,7 @@ header > h1 {
     /* Título principal */
     font-size: 3rem;
     text-align: center;
-    margin: 0; 
+    padding: 0.5rem;
     text-shadow: 1px 1px 2px rgb(81, 46, 13);
 }
 
@@ -42,7 +42,7 @@ header > p {
     /* Subtítulo debajo del h1  */
     font-size: 1.5rem;
     text-align: center;
-    margin-top: 0.5rem;
+    padding: 0.5rem;
     color: #000000;
     font-weight: 500;
 }
@@ -118,11 +118,12 @@ nav ul li a:hover {
 #menu {
     /* Sección menú */
     width: 90%;
-    margin: 2rem;
-    padding: 1.5rem 2rem;
+    margin: 2rem auto;
+    padding: 2rem;
     background-color: #c39268;
     border-radius: 12px;
     color: #000000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 #menu ul {
@@ -165,11 +166,12 @@ nav ul li a:hover {
 #promociones { 
     /* Sección promociones */
     width: 90%;
-    margin: 2rem;
-    padding: 1.5rem 2rem;
+    margin: 2rem auto;
+    padding: 2rem;
     background-color: #9a6b42;
     border-radius: 12px;
     color: #000000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 #promociones ul { 
@@ -212,21 +214,114 @@ nav ul li a:hover {
 #nosotros { 
     /* Sección nosotros */
     width: 90%;
-    margin: 2rem;
-    padding: 1.5rem 2rem;
+    margin: 2rem auto;
+    padding: 2rem;
     background-color: #c39268;
     border-radius: 12px;
     color: #000000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-#contacto { 
+.nosotros-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.texto-nosotros {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.texto-nosotros strong {
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.recomendacion {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+#contacto {
     /* Sección contacto */
     width: 90%;
-    margin: 2rem;
-    padding: 1.5rem 2rem;
+    margin: 2rem auto;
+    padding: 2rem;
     background-color: #9a6b42;
-    border-radius: 12px;
+    border-radius: 15px;
     color: #000000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.info-contacto {
+    /* Contenedor de información de contacto */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.dato {
+    /* Estilos para cada dato de contacto */
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.1rem;
+    background-color: #c39268;
+    padding: 0.8rem 1.2rem;
+    border-radius: 25px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.dato i {
+    /* Iconos en datos de contacto */
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.subtitulo {
+    /* Subtítulo en sección contacto */
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+.redes-sociales {
+    /* Contenedor de botones de redes sociales */
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btn-red {
+    /* Estilos para botones de redes sociales */
+    text-decoration: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 25px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-red:hover {
+    /* Efecto hover en botones de redes sociales */
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.copyright {
+    /* Texto de copyright */
+    font-size: 0.9rem;
+    color: #ffffff;
+    margin-top: 1rem;
 }
 
 html { 
