@@ -6,19 +6,20 @@ html {
 body {
     background-color: #f4c1ed;
     font-family: 'Quicksand', sans-serif;
-    margin: auto;
+    margin: 0;
     padding: 20px;
-    box-sizing: border-box;
-    display: flex;
     min-height: 100vh;
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #curriculum {
     display: flex;
     width: 100%;
+    flex-direction: row;
+    width: 100%;
     max-width: 100%;
-    margin: 40px auto;
     background: rgba(230, 160, 234, 0.8);
     border-radius: 15px;
     overflow: hidden;
@@ -29,6 +30,7 @@ body {
     padding: 30px 20px;
     width: 300px;
     text-align: center;
+    flex-shrink: 0;
 }
 
 .mis_contactos p a {
@@ -47,9 +49,8 @@ body {
 }
 
 .fotoPerfil {
-    max-width: 90%;
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     border-radius: 50%;
     margin-bottom: 20px;
     transition: width 0.3s ease, height 0.3s ease, transform 0.3s ease;
@@ -77,7 +78,7 @@ section:hover {
 
 section h2 {
     color: #570c52;
-    font-size: 1.8em;
+    font-size: 1.6em;
     border-bottom: 2px dashed #a8328e;
     padding-bottom: 5px;
     margin-bottom: 15px;
@@ -97,12 +98,4 @@ ul {
 ul li::before {
     content: "☆ ";
     margin-right: 8px;
-}
-
-@media screen and (max-width: 768px) {
-  /* Aquí van los estilos para móvil */
-  section {
-    padding: 10px;
-    font-size: 14px;
-  }
 }
