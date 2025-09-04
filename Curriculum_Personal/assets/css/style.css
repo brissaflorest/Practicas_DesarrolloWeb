@@ -5,22 +5,40 @@ html {
 
 body {
     background-color: #f4c1ed;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
 }
 
 #curriculum {
     display: flex;
+    width: 100%;
     max-width: 900px;
     margin: 40px auto;
-    background: #e6a0ea;
+    background: rgba(230, 160, 234, 0.8);
     border-radius: 15px;
     overflow: hidden;
-}
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);}
 
 .mis_contactos {
     background: #f3def1;
     padding: 30px 20px;
     width: 300px;
     text-align: center;
+}
+
+.mis_contactos p a {
+    color: #570c52;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.mis_contactos p a:hover {
+    color: #a8328e;
 }
 
 .mi_historial {
@@ -44,9 +62,38 @@ body {
 }
 
 section {
+    background-color: #f3def1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     margin-bottom: 30px;
+    transition: transform 0.3s ease;
 }
+
+section:hover {
+    transform: scale(1.02);
+}
+
 section h2 {
     color: #570c52;
-    margin-bottom: 10px;
+    font-size: 1.8em;
+    border-bottom: 2px dashed #a8328e;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+section h2::before {
+    content: "★ ";
+    color: #c869ff;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li::before {
+    content: "☆ ";
+    margin-right: 8px;
 }
