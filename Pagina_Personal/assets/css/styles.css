@@ -1,0 +1,196 @@
+body {
+    background: linear-gradient(135deg, #f3eafc 0%, #f9d5d3 100%);
+    font-family: 'Montserrat', 'Ovo', 'Roboto Mono', sans-serif;
+    color: #4b2e83;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.85);
+    border-radius: 18px;
+    box-shadow: 0 0 30px #d1c4e9;
+    padding: 32px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+h1 {
+    font-family: 'Ovo', cursive;
+    font-size: 4rem;
+    margin: 0.5rem 0;
+    color:#e87ac6;
+    text-shadow: 1px 1px 8px #fff;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #7c43bd;
+    margin-top: 2rem;
+}
+
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #b39ddb;
+    transition: transform 0.3s;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.2) rotate(-5deg);
+}
+
+section {
+    margin-bottom: 1rem;
+}
+
+#canciones-favoritas {
+  margin-top: 2rem;
+  padding: 1.5rem 2rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 0 20px #d1c4e9;
+}
+
+#canciones-favoritas h2 {
+  font-size: 1.5rem;
+  color: #e87ac6;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#canciones-favoritas a {
+  color: #7c43bd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#canciones-favoritas a:hover {
+  color: #e87ac6;
+  text-decoration: underline;
+}
+
+#canciones-favoritas ul {
+  list-style: none;
+  padding: 0;
+}
+
+#canciones-favoritas li {
+  background: #f3eafc;
+  border-left: 5px solid #7c43bd;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: 0 2px 8px #d1c4e9;
+  font-family: 'Montserrat', sans-serif;
+  transition: transform 0.3s;
+}
+
+#canciones-favoritas li:hover {
+  transform: scale(1.03);
+  background: #e528a9;
+  color: #fff;
+}
+
+#canciones-favoritas small {
+  display: block;
+  margin-top: 0.5rem;
+  color: #4b2e83;
+  font-style: italic;
+}
+
+.carrusel-animes {
+  width: 100%;
+  margin: 2rem auto;
+  text-align: center;
+  height: 19rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.carrusel-animes h2 {
+  font-size: 1.5rem;
+  color: #e87ac6;
+  margin-bottom: 1rem;
+}
+
+.img-animes {
+  display: flex;
+  animation: scroll-animes 60s linear infinite;
+  gap: 1rem;
+}
+
+.img-animes img {
+  width: 20rem;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px #b39ddb;
+  transition: transform 0.3s;
+}
+
+.img-animes img:hover {
+  transform: scale(1.1) rotate(-2deg);
+}
+
+@keyframes scroll-animes {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-250%);
+  }
+}
+
+.separador {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 30px 0;
+}
+
+.enlaces-tareas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.enlace-tarea {
+    background: #f9d5d3;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 2px 8px #e1bee7;
+    text-decoration: none;
+    color: #4b2e83;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.enlace-tarea:hover {
+    background: #e528a9;
+    color: #fff;
+    transform: scale(1.08);
+}
+
+.icon-otaku {
+    font-size: 1.3rem;
+    color: #7c43bd;
+}
+
+@media (max-width: 700px) {
+    .container { padding: 10px; }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.1rem; }
+    .enlaces-tareas { flex-direction: column; }
+}
